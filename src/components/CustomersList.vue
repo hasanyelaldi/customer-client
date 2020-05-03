@@ -142,7 +142,7 @@
 
     computed: {
       formTitle () {
-        return this.editedId === -1 ? 'New Item' : 'Edit Item'
+        return this.editedId === -1 ? 'New Customer' : 'Edit Customer'
       },
     },
 
