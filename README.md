@@ -1,24 +1,58 @@
-# customer-client
+# Customer Client
+A simple client for customer management
 
-## Project setup
+## Vuetify
+Vuetify is a Vue UI Library with beautifully handcrafted Material Components. Install vuetify with command:
 ```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
+npm install vuetify
 ```
 
-### Compiles and minifies for production
+## Vue-router
+Vue Router is the official router for Vue.js. Install vue-router with command:
 ```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
+npm install vue-router
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Fontawesome (Free)
+You place Font Awesome icons by using the prefix fa and the icon's name. Install fontawesome with command:
+```
+npm install @fortawesome/fontawesome-free -D
+```
+
+## Axios
+Promise based HTTP client for the browser and node.js. Install axios with command:
+```
+npm install axios
+```
+
+## Configuration
+main.js
+```
+import Vue from 'vue'
+import App from './App.vue'
+import router from './router'
+import vuetify from './plugins/vuetify';
+
+Vue.config.productionTip = false
+
+new Vue({
+  router,
+  vuetify,
+  render: h => h(App)
+}).$mount('#app')
+```
+
+vuetify.js
+```
+import '@fortawesome/fontawesome-free/css/all.css';
+import Vue from 'vue';
+import Vuetify from 'vuetify/lib';
+
+Vue.use(Vuetify);
+
+export default new Vuetify({
+    icons: {
+        iconfont: 'fa',
+      },
+});
+```
