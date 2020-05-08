@@ -1,6 +1,11 @@
 # Customer Client
 A simple client for customer management
 
+## Panel
+![DashBoard](https://github.com/hasanyelaldi/customer-client/blob/master/src/assets/view.png)
+## List
+![CustomerList](https://github.com/hasanyelaldi/customer-client/blob/master/src/assets/view2.png)
+
 ## Vuetify
 Vuetify is a Vue UI Library with beautifully handcrafted Material Components. Install vuetify with command:
 ```
